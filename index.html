@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATEEQ SPA SALOON</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img src="images/moteeqspalogo-removebg-preview.png" alt="Logo"></a>
+            </div>
+
+
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">About us</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#"> Meet our Team</a></li>
+                        <li><a href="#">Our History</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Book a Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slider-container">
+        <div class="slide fade">
+            <img src="images/spa 1.jpeg" alt="Image 1">
+            <div class="text">
+                <h2 class="qwitcher-grypen-regular">Welcome to our</h2>
+                <h1> Skincare and spa centre</h1>
+                <p class="qwitcher-grypen-regular">inner peace, outer radiance: restore and renew</p>
+
+                <a href="#" class="image-button">Book a Service</a>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <img src="images/spa 2.jpeg" alt="Image 2">
+            <div class="text">
+                <h2 class="qwitcher-grypen-regular">Experience our transformative</h2>
+                <h1>Skincare and massage therapies</h1>
+                <p class="qwitcher-grypen-regular">Carefully crafted to harmonize your body spirit and soul</p>
+            </div>
+        </div>
+
+        <div class="slide fade">
+            <img src="images/spa 33.jpg" alt="Image 3">
+            <div class="text" style="color: white;">
+                <h2 class="qwitcher-grypen-regular">We empower you to own your beauty by</h2>
+                <h1>Transforming your body to your unique taste and style</h1>
+                <p class="qwitcher-grypen-regular">Personalised beauty,purely natural,purely you</p>
+            </div>
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+    r4r
+
+
+    <script>
+
+        function toggleMenu() {
+            const menu = document.querySelector('.nav-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
